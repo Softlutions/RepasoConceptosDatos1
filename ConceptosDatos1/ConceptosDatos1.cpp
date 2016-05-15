@@ -4,12 +4,15 @@
 #include "ConceptosDatos1.h"
 #include "stdafx.h"
 #include "ColaEstatica.h"
+#include "PilaEst.h"
+
 
 ColaEstatica *cola;
-
+PilaEst *pila;
 int main()
 {
 	cola = new ColaEstatica();
+	pila = new PilaEst();
 	mostrarMenu();
 
 	return 0;
@@ -145,17 +148,29 @@ void procesarOpcionPila()
 
 void push()
 {
+	int dato;
 
+	cout << "Ingrese el dato que desea agregar: " << "\n" << "\n";
+	cin >> dato;
+
+	if (!pila->encolar(dato))
+	{
+		cout << "Llego a su maximo la cantidad de datos almacenables, por lo tanto no se guardo el ultimo dato." << "\n" << "\n";
+	}
+	else
+	{
+		cout << "Dato agregado con exito." << "\n" << "\n";
+	}
 }
 
 void pop()
 {
-
+	cout << "El dato que acaba de quitar es: " << pila->desencolar() << "\n" << "\n";
 }
 
 void mostrarPila()
 {
-
+	pila->mostrar();
 }
 
 // LISTA

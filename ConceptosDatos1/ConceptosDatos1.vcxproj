@@ -152,6 +152,7 @@
     <ClInclude Include="ColaEstatica.h" />
     <ClInclude Include="ConceptosDatos1.h" />
     <ClInclude Include="Estructura.h" />
+    <ClInclude Include="PilaEst.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -159,6 +160,7 @@
     <ClCompile Include="ColaEstatica.cpp" />
     <ClCompile Include="ConceptosDatos1.cpp" />
     <ClCompile Include="Estructura.cpp" />
+    <ClCompile Include="PilaEst.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
